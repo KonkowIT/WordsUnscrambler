@@ -24,7 +24,7 @@ namespace WordsUnscrambler
             myArray[1] = 4;
             myArray[2] = 3;
 
-            // OR
+            //  adding items to array, another way
             int[] myArray2 = { 1, 4, 3 };
 
             //  sorting array
@@ -35,6 +35,33 @@ namespace WordsUnscrambler
             {
                 Console.WriteLine("Step: {0}, value: {1}", i, myArray[i]);
             }
+
+            //-- WHILE LOOP (if the condition is true, the loop will not be executed even once)
+            int k = 0;
+            while (k < 5) 
+            {
+                Console.WriteLine("INT: {0}", k);
+                k++;
+            }
+
+            //-- DO WHILE LOOP (will be executed at least one, even if condifition is true)
+            int l = 0;
+            do
+            {
+                Console.WriteLine("INT_2: {0}", l);
+                l++;
+            } while (l < 5);
+
+            //-- FOREACH LOOP
+            string words = "pizza";
+            foreach (char letter in words)
+            {
+                Console.WriteLine(letter);
+            }
+
+            //-- REFERENCE
+
+            //-- VALUE TYPES
 
         }
     }
